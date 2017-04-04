@@ -1,0 +1,20 @@
+No configs found; falling back on auto-configuration
+ignoring partitioner keyword arg (requires real Hadoop): 'org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner'
+Traceback (most recent call last):
+  File "3_apartado_paral.py", line 80, in <module>
+    MRTriciclos.run()
+  File "/usr/local/lib/python2.7/dist-packages/mrjob/job.py", line 430, in run
+    mr_job.execute()
+  File "/usr/local/lib/python2.7/dist-packages/mrjob/job.py", line 448, in execute
+    super(MRJob, self).execute()
+  File "/usr/local/lib/python2.7/dist-packages/mrjob/launch.py", line 160, in execute
+    self.run_job()
+  File "/usr/local/lib/python2.7/dist-packages/mrjob/launch.py", line 230, in run_job
+    runner.run()
+  File "/usr/local/lib/python2.7/dist-packages/mrjob/runner.py", line 473, in run
+    self._run()
+  File "/usr/local/lib/python2.7/dist-packages/mrjob/sim.py", line 160, in _run
+    _error_on_bad_paths(self.fs, self._input_paths)
+  File "/usr/local/lib/python2.7/dist-packages/mrjob/sim.py", line 552, in _error_on_bad_paths
+    "None found in %s" % paths)
+ValueError: At least one valid path is required. None found in ['grafo_prueba_2.txtcd']
